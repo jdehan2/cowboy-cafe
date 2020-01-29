@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Xunit;
 using CowboyCafe.Data;
-/*
+
 namespace CowboyCafe.DataTests
 {
     public class RustlersRibsTest
@@ -21,13 +21,12 @@ namespace CowboyCafe.DataTests
             var ribs = new RustlersRibs();
             Assert.Equal<uint>(894, ribs.Calories);
         }
-
+        /*
         [Fact]
         public void DefaultSpecialInstructionsShouldBeEmpty()
         {
             var ribs = new RustlersRibs();
             Assert.Empty(ribs.SpecialInstructions);
-        }
+        }*/
     }
 }
-*/
