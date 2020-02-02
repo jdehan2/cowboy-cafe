@@ -4,6 +4,9 @@ using System.Text;
 
 namespace CowboyCafe.Data
 {
+    /// <summary>
+    /// A class representing the Rustlers Ribs entree
+    /// </summary>
     public class RustlersRibs
     {
 
@@ -28,7 +31,18 @@ namespace CowboyCafe.Data
                 return 894;
             }
         }
+        /// <summary>
+        /// Special instructions not included but tests require an empty test
+        /// </summary>
+        public List<string> SpecialInstructions
+        {
+            get
+            {
+                var instructions = new List<string>();
 
+                return instructions;
+            }
+        }
 
     }
 }

@@ -21,12 +21,12 @@ namespace CowboyCafe.DataTests
             var ribs = new RustlersRibs();
             Assert.Equal<uint>(894, ribs.Calories);
         }
-        /*
+        
         [Fact]
         public void DefaultSpecialInstructionsShouldBeEmpty()
         {
             var ribs = new RustlersRibs();
             Assert.Empty(ribs.SpecialInstructions);
-        }*/
+        }
     }
 }

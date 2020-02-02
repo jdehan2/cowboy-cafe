@@ -5,12 +5,10 @@ using System.Text;
 namespace CowboyCafe.Data
 {
     /// <summary>
-    /// A class representing the Trailburger entree
+    /// A class representing the Texas Triple Burger entree
     /// </summary>
-    public class TrailBurger
+    public class TexasTripleBurger
     {
-
-
         private bool bun = true;
         /// <summary>
         /// If the burger is has a bun
@@ -62,6 +60,54 @@ namespace CowboyCafe.Data
             set { pickle = value; }
         }
 
+        private bool tomato = true;
+        /// <summary>
+        /// If the burger is topped with tomato
+        /// </summary>
+        public bool Tomato
+        {
+            get { return tomato; }
+            set { tomato = value; }
+        }
+        private bool lettuce = true;
+        /// <summary>
+        /// If the burger is topped with lettuce
+        /// </summary>
+        public bool Lettuce
+        {
+            get { return lettuce; }
+            set { lettuce = value; }
+        }
+        private bool mayo = true;
+        /// <summary>
+        /// If the burger is topped with mayo
+        /// </summary>
+        public bool Mayo
+        {
+            get { return mayo; }
+            set { mayo = value; }
+        }
+
+        private bool bacon = true;
+        /// <summary>
+        /// If the burger is topped with bacon
+        /// </summary>
+        public bool Bacon
+        {
+            get { return bacon; }
+            set { bacon = value; }
+        }
+
+        private bool egg = true;
+        /// <summary>
+        /// If the burger is topped with egg
+        /// </summary>
+        public bool Egg
+        {
+            get { return egg; }
+            set { egg = value; }
+        }
+
         /// <summary>
         /// The price of the burger
         /// </summary>
@@ -69,7 +115,7 @@ namespace CowboyCafe.Data
         {
             get
             {
-                return 4.50;
+                return 6.45;
             }
         }
 
@@ -80,7 +126,7 @@ namespace CowboyCafe.Data
         {
             get
             {
-                return 288;
+                return 698;
             }
         }
 
@@ -97,7 +143,12 @@ namespace CowboyCafe.Data
                 if (!ketchup) instructions.Add("hold ketchup");
                 if (!mustard) instructions.Add("hold mustard");
                 if (!pickle) instructions.Add("hold pickle");
+                if (!tomato) instructions.Add("hold tomato");
                 if (!bun) instructions.Add("hold bun");
+                if (!lettuce) instructions.Add("hold lettuce");
+                if (!mayo) instructions.Add("hold mayo");
+                if (!bacon) instructions.Add("hold bacon");
+                if (!egg) instructions.Add("hold egg");
                 return instructions;
             }
         }
