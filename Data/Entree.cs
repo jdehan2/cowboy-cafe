@@ -7,7 +7,7 @@ namespace CowboyCafe.Data
     public abstract class Entree
     {
         /// <summary>
-        /// Gets the price of the entree
+        /// Gets the instructions of the entree
         /// </summary>
         public abstract List<string> SpecialInstructions { get;  }
 
