@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CowboyCafe.Data;
 
 namespace PointOfSale
 {
@@ -21,7 +22,25 @@ namespace PointOfSale
         public OrderControl()
         {
             InitializeComponent();
-            AddTrailBurgerButton.height = 90;
+            AddTrailBurgerButton.Click += OnAddTrailBurgerButtonClicked;
+            AddCowpokeChiliButton.Click += OnAddCowpokeChiliButtonClicked;
+            AddAngryChickenButton.Click += OnAddAngryChickenButtonClicked;
+        }
+
+
+        void OnAddCowpokeChiliButtonClicked(object sender, RoutedEventArgs e)
+        {
+            OrderListView.Items.Add(new CowpokeChili());
+        }
+
+        void OnAddTrailBurgerButtonClicked(object sender, RoutedEventArgs e)
+        {
+            OrderListView.Items.Add(new TrailBurger());
+        }
+
+        void OnAddAngryChickenButtonClicked(object sender, RoutedEventArgs e)
+        {
+            OrderListView.Items.Add(new AngryChicken());
         }
     }
 }
