@@ -152,5 +152,13 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Texas Triple Burger");
+            return sb.ToString();
+        }
+
     }
 }

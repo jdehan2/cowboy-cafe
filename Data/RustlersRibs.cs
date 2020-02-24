@@ -44,5 +44,12 @@ namespace CowboyCafe.Data
             }
         }
 
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Rustler's Ribs");
+            return sb.ToString();
+        }
+
     }
 }

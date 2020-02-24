@@ -131,6 +131,11 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
-
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Dakota Double Burger");
+            return sb.ToString();
+        }
     }
 }

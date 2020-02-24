@@ -70,5 +70,12 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Pecos Pulled Pork");
+            return sb.ToString();
+        }
     }
 }

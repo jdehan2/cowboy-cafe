@@ -101,5 +101,16 @@ namespace CowboyCafe.Data
             }
         }
 
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Size);
+            if (!Sweet)
+            {
+                sb.Append("Unsweetened");
+            }
+            sb.Append(" Texas Tea");
+            return sb.ToString();
+        }
     }
 }

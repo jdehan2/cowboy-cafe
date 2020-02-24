@@ -68,7 +68,7 @@ namespace PointOfSale
         }
         void OnAddTexasTripleBurgerButtonClicked(object sender, RoutedEventArgs e)
         {
-            OrderListView.Items.Add(new DakotaDoubleBurger());
+            OrderListView.Items.Add(new TexasTripleBurger());
         }
 
         void OnAddAngryChickenButtonClicked(object sender, RoutedEventArgs e)

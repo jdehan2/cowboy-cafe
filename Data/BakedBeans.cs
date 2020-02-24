@@ -52,5 +52,12 @@ namespace CowboyCafe.Data
             }
         }
 
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(Size);
+            sb.Append(" Baked Beans");
+            return sb.ToString();
+        }
     }
 }
