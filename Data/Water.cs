@@ -5,9 +5,9 @@ using System.Text;
 namespace CowboyCafe.Data
 {
     /// <summary>
-    /// A class representing the Texas Tea drink
+    /// A class representing the water drink
     /// </summary>
-    public class TexasTea : Drink
+    public class Water : Drink
     {
         /// <summary>
         /// The calories of the drink based on the size
@@ -16,37 +16,19 @@ namespace CowboyCafe.Data
         {
             get
             {
-                if (Sweet)
-                {
-                    switch (Size)
-                    {
 
-                        case Size.Small:
-                            return 10;
-                        case Size.Medium:
-                            return 22;
-                        case Size.Large:
-                            return 36;
-                        default:
-                            return 10;
-                    }
-                }
-                else
+                switch (Size)
                 {
-                    switch (Size)
-                    {
 
-                        case Size.Small:
-                            return 5;
-                        case Size.Medium:
-                            return 11;
-                        case Size.Large:
-                            return 18;
-                        default:
-                            return 5;
-                    }
+                    case Size.Small:
+                        return 0;
+                    case Size.Medium:
+                        return 0;
+                    case Size.Large:
+                        return 0;
+                    default:
+                        return 0;
                 }
-                
             }
         }
         /// <summary>
@@ -59,22 +41,18 @@ namespace CowboyCafe.Data
                 switch (Size)
                 {
                     case Size.Small:
-                        return 1.00;
+                        return 0.12;
                     case Size.Medium:
-                        return 1.50;
+                        return 0.12;
                     case Size.Large:
-                        return 2.00;
+                        return 0.12;
                     default:
-                        return 1.00;
+                        return 0.12;
                 }
             }
         }
 
-        /// <summary>
-        /// determines if the drink is sweet
-        /// </summary>
-        public bool Sweet { get; set; } = true;
-
+    
         /// <summary>
         /// determines if the drink has lemon
         /// </summary>
