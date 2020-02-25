@@ -101,7 +101,9 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
-
+        /// <summary>
+        /// Formats the toString to output a simplified description of the object
+        /// </summary>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();

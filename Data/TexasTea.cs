@@ -100,16 +100,23 @@ namespace CowboyCafe.Data
                 return instructions;
             }
         }
-
+        /// <summary>
+        /// Formats the toString to output a simplified description of the object
+        /// </summary>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(Size);
+            sb.Append(" Texas");
             if (!Sweet)
             {
-                sb.Append("Unsweetened");
+                sb.Append(" Plain");
             }
-            sb.Append(" Texas Tea");
+            else
+            {
+                sb.Append(" Sweet");
+            }
+            sb.Append(" Tea");
             return sb.ToString();
         }
     }

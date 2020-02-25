@@ -75,12 +75,34 @@ namespace CowboyCafe.Data
             }
         }
 
-
+        /// <summary>
+        /// Formats the toString to output a simplified description of the object
+        /// </summary>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
             sb.Append(Size+ " ");
-            sb.Append(Flavor);
+            if(Flavor == SodaFlavor.BirchBeer)
+            {
+                sb.Append("Birch Beer");
+            }
+            else if(Flavor == SodaFlavor.CreamSoda)
+            {
+                sb.Append("Cream Soda");
+            }
+            else if(Flavor == SodaFlavor.OrangeSoda)
+            {
+                sb.Append("Orange Soda");
+            }
+            else if(Flavor == SodaFlavor.RootBeer)
+            {
+                sb.Append("Root Beer");
+            }
+            else
+            {
+                sb.Append(Flavor);
+            }
+            
             sb.Append(" Jerked Soda");
             return sb.ToString();
         }
