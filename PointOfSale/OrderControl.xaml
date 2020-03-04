@@ -14,42 +14,41 @@
         
     </UserControl.Resources>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
         
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600">
+            </ColumnDefinition>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
         <StackPanel Grid.Column="0">
-            <TextBlock TextAlignment="Center">Entree</TextBlock>
-            <Button Name="AddCowpokeChiliButton">Cowpoke Chili</Button>
-            <Button Name="AddRustlersRibs">Rustler's Ribs</Button>
-            <Button Name="AddPecosPulledPork">Pecos Pulled Pork</Button>
-            <Button Name="AddTrailBurgerButton">Trail Burger</Button>
-            <Button Name="AddDakotaDoubleBurgerButton">Dakota Double Burger</Button>
-            <Button Name="AddTexasTripleBurgerButton">Texas Triple Burger</Button>
-            <Button Name="AddAngryChickenButton">Angry Chicken</Button>
-            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200">
+                    </ColumnDefinition>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                <Button Name= "ItemSelectionButton" Width="200">Item Selection</Button>
+                </StackPanel>
+                <StackPanel Grid.Column="1">
+                <Button Name= "CancelButton" Width="200">Cancel Order</Button>
         </StackPanel>
-        <StackPanel Grid.Column="1">
-            <TextBlock TextAlignment="Center">Side</TextBlock>
-            <Button Name="AddChiliCheeseFriesButton">Chili Cheese Fries</Button>
-            <Button Name="AddCornDodgersButton">Corn Dodgers</Button>
-            <Button Name="AddPanDeCampoButton">Pan de Campo</Button>
-            <Button Name="AddBakedBeansButton">Baked Beans</Button>
-        </StackPanel>
-        <StackPanel Grid.Column="2">
-            <TextBlock TextAlignment="Center">Drinks</TextBlock>
-            <Button Name="AddJerkedSodaButton">Jerked Soda</Button>
-            <Button Name="AddTexasTeaButton">Texas Tea</Button>
-            <Button Name="AddCowboyCoffeeButton">Cowboy Coffee</Button>
-            <Button Name="AddWaterButton">Water</Button>
+                <StackPanel Grid.Column="2">
+        <Button Name= "CompleteButton" Width="200">Complete Order</Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="3">
+    </Grid>
+            
+            <TextBlock>Menu</TextBlock>
+            <local:MenuItemSelectionMenu/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="1">
             <TextBlock>Order</TextBlock>
-            <ListView Name="OrderListView"></ListView>
+            <local:OrderSummaryControl/>
         </StackPanel>
         
     </Grid>
