@@ -22,7 +22,7 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0">
-            <Grid>
+            <Grid Grid.Row="0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="200">
                     </ColumnDefinition>
@@ -30,19 +30,20 @@
                     <ColumnDefinition Width="200"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0">
-                <Button Name= "ItemSelectionButton" Width="200">Item Selection</Button>
+                    <Button Name= "ItemSelectionButton" Width="200">Item Selection</Button>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
-                <Button Name= "CancelButton" Width="200">Cancel Order</Button>
-        </StackPanel>
+                    <Button Name= "CancelButton" Width="200">Cancel Order</Button>
+                </StackPanel>
                 <StackPanel Grid.Column="2">
-        <Button Name= "CompleteButton" Width="200">Complete Order</Button>
-        </StackPanel>
+                    <Button Name= "CompleteButton" Width="200">Complete Order</Button>
+                </StackPanel>
 
-    </Grid>
-            
-            <TextBlock>Menu</TextBlock>
-            <local:MenuItemSelectionMenu/>
+            </Grid>
+            <Border Name="Container" Grid.Row="1">
+                <local:MenuItemSelectionMenu/>
+            </Border>
+
         </StackPanel>
 
 

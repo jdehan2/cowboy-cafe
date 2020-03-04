@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using CowboyCafe.Data;
+using CowboyCafe.Extentions;
 
 namespace PointOfSale
 {
@@ -19,17 +20,25 @@ namespace PointOfSale
     /// </summary>
     public partial class MenuItemSelectionMenu : UserControl
     {
+
+        private OrderControl orderControl;
         public MenuItemSelectionMenu()
         {
+
+
+
             InitializeComponent();
+
+            
+
             //Entrees
             AddCowpokeChiliButton.Click += OnAddCowpokeChiliButtonClicked;
-            AddRustlersRibs.Click += OnAddCowpokeChiliButtonClicked;
-            AddPecosPulledPork.Click += OnAddCowpokeChiliButtonClicked;
-            AddTrailBurgerButton.Click += OnAddCowpokeChiliButtonClicked;
-            AddDakotaDoubleBurgerButton.Click += OnAddCowpokeChiliButtonClicked;
-            AddTexasTripleBurgerButton.Click += OnAddCowpokeChiliButtonClicked;
-            AddAngryChickenButton.Click += OnAddCowpokeChiliButtonClicked;
+            AddRustlersRibs.Click += OnAddRustlersRibsClicked;
+            AddPecosPulledPork.Click += OnAddAddPecosPulledPorkClicked;
+            AddTrailBurgerButton.Click += OnAddTrailBurgerButtonClicked;
+            AddDakotaDoubleBurgerButton.Click += OnAddDakotaDoubleBurgerButtonClicked;
+            AddTexasTripleBurgerButton.Click += OnAddTexasTripleBurgerButtonClicked;
+            AddAngryChickenButton.Click += OnAddAngryChickenButtonClicked;
             //Sides
             AddChiliCheeseFriesButton.Click += OnAddCowpokeChiliButtonClicked;
             AddCornDodgersButton.Click += OnAddCowpokeChiliButtonClicked;
@@ -53,11 +62,81 @@ namespace PointOfSale
             }
 
         }
-        /*
         void OnAddRustlersRibsClicked(object sender, RoutedEventArgs e)
         {
-            OrderListView.Items.Add(new RustlersRibs());
+            if (DataContext is Order data)
+            {
+                data.Add(new RustlersRibs());
+
+            }
+
         }
+        void OnAddAddPecosPulledPorkClicked(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is Order data)
+            {
+                data.Add(new PecosPulledPork());
+
+            }
+
+        }
+        void OnAddTrailBurgerButtonClicked(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is Order data)
+            {
+                data.Add(new TrailBurger());
+
+            }
+
+        }
+        void OnAddDakotaDoubleBurgerButtonClicked(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is Order data)
+            {
+                data.Add(new DakotaDoubleBurger());
+
+            }
+
+        }
+        void OnAddTexasTripleBurgerButtonClicked(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is Order data)
+            {
+                data.Add(new TexasTripleBurger());
+
+            }
+
+        }
+        void OnAddAngryChickenButtonClicked(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is Order data)
+            {
+                data.Add(new AngryChicken());
+
+            }
+
+        }
+
+        void OnAddRustlersRibsClicked(object sender, RoutedEventArgs e)
+        {
+             orderControl = this.FindAncestor<OrderControl>();
+            if (DataContext is Order order)
+            {
+                if(sender is Button button)
+                {
+                    switch (button.Tag)
+                    {
+                        case "RustlersRibs":
+                            var entree = new CowpokeChili();
+                            order.Add(new CowpokeChili());
+                            orderControl.SwapScreen(new CustomizeRustlersRibs());
+                            break;
+                    }
+                }
+            }
+        }
+        
+        /*
         void OnAddPecosPulledPorkClicked(object sender, RoutedEventArgs e)
         {
             OrderListView.Items.Add(new PecosPulledPork());
@@ -125,6 +204,6 @@ namespace PointOfSale
         */
 
 
-    
-}
+
+    }
 }

@@ -30,6 +30,12 @@ namespace PointOfSale
         }
 
 
+        public void SwapScreen(UIElement element)
+        {
+            Container.Child = element;
+        }
+
+
         void ItemSelectionClicked(object sender, RoutedEventArgs e)
         {
             

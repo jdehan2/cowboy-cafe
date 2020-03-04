@@ -16,7 +16,7 @@
         <StackPanel Grid.Column="0">
             <TextBlock TextAlignment = "Center" > Entree</TextBlock>
             <Button Name= "AddCowpokeChiliButton" >Cowpoke Chili</Button>
-            <Button Name = "AddRustlersRibs" >Rustler's Ribs</Button>
+            <Button Name = "AddRustlersRibs" Tag="RustlersRibs">Rustler's Ribs</Button>
             <Button Name = "AddPecosPulledPork" >Pecos Pulled Pork</Button>
             <Button Name = "AddTrailBurgerButton" >Trail Burger</Button>
             <Button Name = "AddDakotaDoubleBurgerButton" >Dakota Double Burger</Button>
