@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PointOfSale"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="850">
     <UserControl.Resources>
         <Style TargetType="Button">
             <Setter Property="Height" Value="50px"/>
@@ -18,7 +18,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="600">
             </ColumnDefinition>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="250"/>
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Column="0">
@@ -50,6 +50,7 @@
         <StackPanel Grid.Column="1">
             <TextBlock>Order</TextBlock>
             <local:OrderSummaryControl/>
+            <TextBox Text="{Binding Path=Subtotal, StringFormat=' Subtotal: {0:c}'}"  VerticalAlignment="Bottom"/>
         </StackPanel>
         
     </Grid>
