@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using System.Text;
 
+using System.ComponentModel;
+
 namespace CowboyCafe.Data
 {
-    public abstract class Entree : IOrderItem
+    public abstract class Entree : IOrderItem, INotifyPropertyChanged
     {
+
+        public event PropertyChangedEventHandler PropertyChanged;
         /// <summary>
         /// Gets the instructions of the entree
         /// </summary>
@@ -21,6 +25,13 @@ namespace CowboyCafe.Data
         /// Gets the calories of the entree
         /// </summary>
         public abstract uint Calories { get; }
+
+
+        protected void NotifyPropertyChanged(string propertyChanged)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyChanged));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SpecialInstructions"));
+        }
 
     }
 }

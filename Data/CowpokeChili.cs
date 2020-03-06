@@ -8,6 +8,9 @@ namespace CowboyCafe.Data
     /// </summary>
     public class CowpokeChili : Entree
     {
+
+        
+
         private bool cheese = true;
         /// <summary>
         /// If the chili is topped with cheese
@@ -15,7 +18,9 @@ namespace CowboyCafe.Data
         public bool Cheese
         {
             get { return cheese; }
-            set { cheese = value; }
+            set {
+                cheese = value;
+                  }
         }
 
         private bool sourCream = true;
@@ -45,7 +50,9 @@ namespace CowboyCafe.Data
         public bool TortillaStrips
         {
             get { return tortillaStrips; }
-            set { tortillaStrips = value; }
+            set { tortillaStrips = value;
+                NotifyPropertyChanged("tortilla strips");
+            }
         }
 
         /// <summary>
@@ -96,6 +103,8 @@ namespace CowboyCafe.Data
         {
             return "Cowpoke Chili";
         }
+
+        
     }
 }
 
