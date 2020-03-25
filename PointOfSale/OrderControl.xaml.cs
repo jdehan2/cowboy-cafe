@@ -38,7 +38,7 @@ namespace PointOfSale
 
         void ItemSelectionClicked(object sender, RoutedEventArgs e)
         {
-            
+            SwapScreen(new MenuItemSelectionMenu());
 
         }
         void CancelClicked(object sender, RoutedEventArgs e)

@@ -32,13 +32,13 @@ namespace PointOfSale
             
 
             //Entrees
-            AddCowpokeChiliButton.Click += OnAddCowpokeChiliButtonClicked;
-            AddRustlersRibs.Click += OnAddRustlersRibsClicked;
-            AddPecosPulledPork.Click += OnAddAddPecosPulledPorkClicked;
-            AddTrailBurgerButton.Click += OnAddTrailBurgerButtonClicked;
-            AddDakotaDoubleBurgerButton.Click += OnAddDakotaDoubleBurgerButtonClicked;
-            AddTexasTripleBurgerButton.Click += OnAddTexasTripleBurgerButtonClicked;
-            AddAngryChickenButton.Click += OnAddAngryChickenButtonClicked;
+            AddCowpokeChili.Click += OnAddRustlersRibsClicked;
+            AddRustlersRib.Click += OnAddRustlersRibsClicked;
+            AddPecosPulledPork.Click += OnAddRustlersRibsClicked;
+            AddTrailBurgerButton.Click += OnAddRustlersRibsClicked;
+            AddDakotaDoubleBurgerButton.Click += OnAddRustlersRibsClicked;
+            AddTexasTripleBurgerButton.Click += OnAddRustlersRibsClicked;
+            AddAngryChickenButton.Click += OnAddRustlersRibsClicked;
             //Sides
             AddChiliCheeseFriesButton.Click += OnAddChiliCheeseFriesButtonClicked;
             AddCornDodgersButton.Click += OnAddCornDodgersButtonClicked;
@@ -52,7 +52,7 @@ namespace PointOfSale
             //AddButton.Click += OnAddButtonClicked;
         }
 
-
+        /*
         void OnAddCowpokeChiliButtonClicked(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order data)
@@ -116,7 +116,7 @@ namespace PointOfSale
             }
 
         }
-
+        */
         void OnAddChiliCheeseFriesButtonClicked(object sender, RoutedEventArgs e)
         {
             if (DataContext is Order data)
@@ -196,7 +196,7 @@ namespace PointOfSale
             }
 
         }
-        /*
+        
         void OnAddRustlersRibsClicked(object sender, RoutedEventArgs e)
         {
              orderControl = this.FindAncestor<OrderControl>();
@@ -207,16 +207,41 @@ namespace PointOfSale
                     switch (button.Tag)
                     {
                         case "RustlersRibs":
-                            var entree = new CowpokeChili();
-                            order.Add(new CowpokeChili());
+                            order.Add(new RustlersRibs());
                             orderControl.SwapScreen(new CustomizeRustlersRibs());
+                            break;
+                        case "CowpokeChili":
+                            order.Add(new CowpokeChili());
+                            orderControl.SwapScreen(new CustomizeCowpokeChili());
+                            break;
+                        case "PecosPulledPork":
+                            order.Add(new PecosPulledPork());
+                            orderControl.SwapScreen(new CustomizePecosPulledPork());
+                            break;
+                        case "TrailBurger":
+                            order.Add(new TrailBurger());
+                            orderControl.SwapScreen(new CustomizeTrailBurger());
+                            break;
+                        case "DakotaDoubleBurger":
+                            order.Add(new DakotaDoubleBurger());
+                            orderControl.SwapScreen(new CustomizeDakotaDoubleBurger());
+                            break;
+                        case "TexasTripleBurger":
+                            order.Add(new TexasTripleBurger());
+                            orderControl.SwapScreen(new CustomizeTexasTripleBurger());
+                            break;
+                        case "AngryChicken":
+                            order.Add(new AngryChicken());
+                            orderControl.SwapScreen(new CustomizeAngryChicken());
                             break;
                     }
                 }
             }
         }
-        */
+
         
+
+
 
 
 

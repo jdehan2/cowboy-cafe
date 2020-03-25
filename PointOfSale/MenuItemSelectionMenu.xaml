@@ -15,13 +15,13 @@
 
         <StackPanel Grid.Column="0">
             <TextBlock TextAlignment = "Center" > Entree</TextBlock>
-            <Button Name= "AddCowpokeChiliButton" >Cowpoke Chili</Button>
-            <Button Name = "AddRustlersRibs" Tag="RustlersRibs">Rustler's Ribs</Button>
-            <Button Name = "AddPecosPulledPork" >Pecos Pulled Pork</Button>
-            <Button Name = "AddTrailBurgerButton" >Trail Burger</Button>
-            <Button Name = "AddDakotaDoubleBurgerButton" >Dakota Double Burger</Button>
-            <Button Name = "AddTexasTripleBurgerButton" >Texas Triple Burger</Button>
-            <Button Name = "AddAngryChickenButton" >Angry Chicken</Button>
+            <Button Name = "AddCowpokeChili" Tag="CowpokeChili">Cowpoke Chili</Button>
+            <Button Name = "AddRustlersRib" Tag="RustlersRibs">Rustler's Ribs</Button>
+            <Button Name = "AddPecosPulledPork" Tag="PecosPulledPork">Pecos Pulled Pork</Button>
+            <Button Name = "AddTrailBurgerButton" Tag="TrailBurger">Trail Burger</Button>
+            <Button Name = "AddDakotaDoubleBurgerButton" Tag="DakotaDoubleBurger">Dakota Double Burger</Button>
+            <Button Name = "AddTexasTripleBurgerButton" Tag="TexasTripleBurger">Texas Triple Burger</Button>
+            <Button Name = "AddAngryChickenButton" Tag="AngryChicken">Angry Chicken</Button>
 
         </StackPanel>
         <StackPanel Grid.Column= "1" >

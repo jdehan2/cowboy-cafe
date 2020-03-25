@@ -7,7 +7,15 @@
         mc:Ignorable="d"
         d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TextBlock>Ribs text</TextBlock>
-        <CheckBox IsChecked="{Binding Path=Bread}"   />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBlock>Bread</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <CheckBox IsChecked="{Binding Path=Bread}"   />
+        </StackPanel>
     </Grid>
 </UserControl>
