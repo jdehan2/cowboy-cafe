@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Media;
 
-namespace CowboyCafe.Extentions
+namespace Menu.Extentions
 {
     public static class ExtentionMethods
     {

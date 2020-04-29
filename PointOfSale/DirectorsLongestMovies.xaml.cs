@@ -10,17 +10,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Menu.Extentions;
 
-namespace PointOfSale
+namespace Menu
 {
-    /// <summary>
-    /// Interaction logic for CustomizeRustlersRibs.xaml
-    /// </summary>
-    public partial class CustomizeRustlersRibs : UserControl
+    public partial class DirectorsLongestMovies : UserControl
     {
-        public CustomizeRustlersRibs()
+        public DirectorsLongestMovies()
         {
             InitializeComponent();
         }
+
+      
     }
 }

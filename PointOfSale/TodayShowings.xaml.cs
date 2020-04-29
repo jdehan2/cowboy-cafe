@@ -11,14 +11,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale
+namespace Menu
 {
-    /// <summary>
-    /// Interaction logic for CustomizeCowpokeChili.xaml
-    /// </summary>
-    public partial class CustomizeCowpokeChili : UserControl
+    public partial class TodayShowings : UserControl
     {
-        public CustomizeCowpokeChili()
+        public TodayShowings()
         {
             InitializeComponent();
         }

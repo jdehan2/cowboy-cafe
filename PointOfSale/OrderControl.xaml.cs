@@ -10,9 +10,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using CowboyCafe.Data;
 
-namespace PointOfSale
+namespace Menu
 {
     /// <summary>
     /// Interaction logic for OrderControl.xaml
@@ -22,11 +21,7 @@ namespace PointOfSale
         public OrderControl()
         {
             InitializeComponent();
-
-            ItemSelectionButton.Click += ItemSelectionClicked;
-            CancelButton.Click += CancelClicked;
-            CompleteButton.Click += CompleteClicked;
-            this.DataContext = new Order();
+            BackToMain.Click += BackToMainClicked;
         }
 
 
@@ -35,21 +30,10 @@ namespace PointOfSale
             Container.Child = element;
         }
 
-
-        void ItemSelectionClicked(object sender, RoutedEventArgs e)
+        void BackToMainClicked(object sender, RoutedEventArgs e)
         {
-            SwapScreen(new MenuItemSelectionMenu());
+            SwapScreen(new Selection());
 
-        }
-        void CancelClicked(object sender, RoutedEventArgs e)
-        {
-            this.DataContext = new Order();
-
-        }
-        void CompleteClicked(object sender, RoutedEventArgs e)
-        {
-
-            this.DataContext = new Order();
         }
     }
 }

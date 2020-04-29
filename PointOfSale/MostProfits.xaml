@@ -1,9 +1,9 @@
-﻿<UserControl x:Class="PointOfSale.CustomizeTrailBurger"
+﻿<UserControl x:Class="Menu.MostProfits"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:PointOfSale"
+             xmlns:local="clr-namespace:Menu"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
@@ -12,18 +12,9 @@
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
-            <TextBlock>Bun</TextBlock>
-            <TextBlock>Cheese</TextBlock>
-            <TextBlock>Ketchup</TextBlock>
-            <TextBlock>Mustard</TextBlock>
-            <TextBlock>Pickle</TextBlock>
+            
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <CheckBox IsChecked="{Binding Path=Bun}"  />
-            <CheckBox IsChecked="{Binding Path=Cheese}"  />
-            <CheckBox IsChecked="{Binding Path=Ketchup}"  />
-            <CheckBox IsChecked="{Binding Path=Mustard}"  />
-            <CheckBox IsChecked="{Binding Path=Pickle}"  />
         </StackPanel>
     </Grid>
 </UserControl>

@@ -11,23 +11,13 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale
+namespace Menu
 {
-    /// <summary>
-    /// Interaction logic for OrderSummaryControl.xaml
-    /// </summary>
-    public partial class OrderSummaryControl : UserControl
+    public partial class NewestMovie : UserControl
     {
-        public OrderSummaryControl()
+        public NewestMovie()
         {
             InitializeComponent();
         }
     }
 }
-
-
-
- 
-
-
-

@@ -11,14 +11,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale
+namespace Menu
 {
-    /// <summary>
-    /// Interaction logic for CustomizeTrailBurger.xaml
-    /// </summary>
-    public partial class CustomizeTrailBurger : UserControl
+    public partial class OldestMovies : UserControl
     {
-        public CustomizeTrailBurger()
+        public OldestMovies()
         {
             InitializeComponent();
         }

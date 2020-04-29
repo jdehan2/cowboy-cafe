@@ -11,14 +11,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale
+namespace Menu
 {
-    /// <summary>
-    /// Interaction logic for CustomizeTexasTripleBurger.xaml
-    /// </summary>
-    public partial class CustomizeTexasTripleBurger : UserControl
+    public partial class FullTheaters : UserControl
     {
-        public CustomizeTexasTripleBurger()
+        public FullTheaters()
         {
             InitializeComponent();
         }

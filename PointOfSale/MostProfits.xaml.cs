@@ -11,14 +11,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale
+namespace Menu
 {
-    /// <summary>
-    /// Interaction logic for CustomizeAngryChicken.xaml
-    /// </summary>
-    public partial class CustomizeAngryChicken : UserControl
+    public partial class MostProfits : UserControl
     {
-        public CustomizeAngryChicken()
+        public MostProfits()
         {
             InitializeComponent();
         }

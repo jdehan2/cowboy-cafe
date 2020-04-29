@@ -11,14 +11,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale
+namespace Menu
 {
-    /// <summary>
-    /// Interaction logic for CustomizeDakotaDoubleBurger.xaml
-    /// </summary>
-    public partial class CustomizeDakotaDoubleBurger : UserControl
+    public partial class HighestPaidEmployees : UserControl
     {
-        public CustomizeDakotaDoubleBurger()
+        public HighestPaidEmployees()
         {
             InitializeComponent();
         }

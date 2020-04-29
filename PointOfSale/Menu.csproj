@@ -1,0 +1,87 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="MostProfits.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MostTotalPay.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DirectorsMostShowing.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ProfitsLost.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="OldestMovies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HandicapAccessibleTheaters.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeesNotWorking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DirectorsLongestMovies.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NewestMovie.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="FullTheaters.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HighestPaidEmployees.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Topten.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="MostProfits.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MostTotalPay.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DirectorsMostShowing.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProfitsLost.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OldestMovies.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HandicapAccessibleTheaters.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeesNotWorking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DirectorsLongestMovies.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NewestMovie.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="FullTheaters.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HighestPaidEmployees.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Topten.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

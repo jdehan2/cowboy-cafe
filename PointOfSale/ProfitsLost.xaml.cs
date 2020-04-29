@@ -11,14 +11,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PointOfSale
+namespace Menu
 {
-    /// <summary>
-    /// Interaction logic for CustomizePecosPulledPork.xaml
-    /// </summary>
-    public partial class CustomizePecosPulledPork : UserControl
+    public partial class ProfitsLost : UserControl
     {
-        public CustomizePecosPulledPork()
+        public ProfitsLost()
         {
             InitializeComponent();
         }
